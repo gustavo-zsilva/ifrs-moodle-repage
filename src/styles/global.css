@@ -1,0 +1,14 @@
+:root {
+    --green-color: #40a24d;
+    --purple-color: rgb(103, 100, 253);
+    --darker-purple-color: #0300a8;
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
