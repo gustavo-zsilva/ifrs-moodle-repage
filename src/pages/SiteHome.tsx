@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 
+import details from '../utils/Details';
+
 import '../styles/pages/site-home.css';
 
 interface ActivityCardProps {
@@ -10,7 +12,10 @@ interface ActivityCardProps {
 
 }
 
-
+interface Detail {
+    summary: string;
+    text: string;
+}
 
 function ActivityCard({ image, title, restriction }: ActivityCardProps) {
     return (
@@ -57,7 +62,25 @@ function SiteHome() {
                 </section>
 
                 <section className="user-help">
+                    <article className="questions">
+                        {/* <p className="legend">Help</p> */}
 
+                        <h2>Perguntas Frequentes</h2>
+
+                        <ul>
+                            {
+                                details.map(detail => {
+                                    const {summary, text}: Detail = detail;
+                                    return (
+                                        <details>
+                                            <summary>{summary}</summary>
+                                            <p className="details-text">{text}</p>
+                                        </details>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </article>
                 </section>
             </main>
         </div>

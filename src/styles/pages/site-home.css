@@ -11,6 +11,24 @@
     text-align: center;
 }
 
+.site-home main p.legend {
+    font-size: 2rem;
+
+    position: relative;
+    top: 2rem;
+
+    color: rgba(0, 0, 0, 0.479);
+    letter-spacing: .06rem;
+
+    background-color: var(--white-color);
+    width: fit-content;
+    margin: auto;
+
+    padding: 0 .5rem;
+}
+
+/* My Courses */
+
 .site-home main .my-courses {
     background-color: var(--green-color);
     max-width: 70vw;
@@ -28,6 +46,8 @@
     cursor: pointer;
 }
 
+/* Activity Dashboard */
+
 .site-home main .activity-dashboard {
     margin-top: 2rem;
 }
@@ -44,21 +64,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.315);
 }
 
-.site-home main .activity-dashboard p.legend {
-    font-size: 2rem;
 
-    position: relative;
-    top: 2rem;
-
-    color: rgba(0, 0, 0, 0.479);
-    letter-spacing: .06rem;
-
-    background-color: var(--white-color);
-    width: fit-content;
-    margin: auto;
-
-    padding: 0 .5rem;
-}
 
 .site-home main .activity-dashboard .activity-card {
     display: flex;
@@ -118,6 +124,33 @@
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.075);
 
 }
+
+/* User Help */
+
+.site-home main .user-help {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'questions questions chat';
+
+    margin-top: 4rem;
+
+    background-color: #e9e9e9;
+    padding: 2rem;
+
+    text-align: start;
+}
+
+.site-home main .user-help h2 {
+   color: #c22137;
+   font-weight: 500;
+}
+
+.site-home main .user-help ul .details-text {
+    background-color: #80808050;
+    padding: 1rem;
+}
+
+/* Responsive */
 
 @media (max-width: 800px) {
     .site-home main .my-courses img {
